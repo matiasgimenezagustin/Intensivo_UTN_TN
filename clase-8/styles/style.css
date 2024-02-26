@@ -1,0 +1,16 @@
+@import url('./font.css');
+
+h1{
+    font-family: var(--ff-title);
+    font-weight: 900;
+}
+
+h2{
+    font-family: var(--ff-title);
+    font-weight: 800;
+}
+
+h3{
+    font-family: var(--ff-title);
+    font-weight: 700;
+}
