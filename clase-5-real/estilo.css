@@ -1,0 +1,31 @@
+
+/* Propiedades de texto */
+.titulo{
+    color: green;
+    font-size: 40px;
+    font-weight: 300;
+    text-decoration:overline /* underline line-through */ solid 1px blue;
+}
+
+.titulo span{
+    text-decoration:underline /* underline line-through */ solid 1px rgb(255, 0, 0);
+}
+
+p{
+    line-height: 20px;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+}
+/* body{
+    background-color: black;
+} */
+.subtitulo{
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 10px rgb(59, 164, 255);
+
+/*     text-shadow: -10px -10px 1px rgb(212, 210, 210), 
+    10px 10px 1px rgb(212, 210, 210); */
+}
+
+

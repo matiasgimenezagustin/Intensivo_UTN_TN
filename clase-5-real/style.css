@@ -1,0 +1,59 @@
+/* CSS: Cascade style sheet = hoja de estilos en cascada */
+
+
+/* p{
+    color:red;
+}
+
+p{
+    color: green;
+} */
+
+p{
+    color: blueviolet;
+}
+
+
+.caja{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+
+
+.caja-producto{
+    background-color: red;
+}
+
+.caja-imagen{
+    background-color: aqua;
+}
+
+.caja-item{
+    background-color: blueviolet;
+    width: 230px;
+}
+
+#link-especial{
+    color: blue;
+}
+
+.cabezal a{
+    color: green;
+}
+
+.cabezal a{
+    color: red;
+}
+
+/* a{
+    color: green !important;
+}
+ */
+
+/*  #enlace{
+    color: blueviolet
+ } */
