@@ -1,8 +1,21 @@
 @import url('./font.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+.bi-airplane{
+    color: red;
+    font-size: 30px;
+    text-shadow: 0 0 3px red;
+}
+.bi-alt{
+    color:blue;
+    width: 32px;
+}
 
 h1{
     font-family: var(--ff-title);
     font-weight: 900;
+    color: #E03131;
 }
 
 h2{
@@ -13,4 +26,8 @@ h2{
 h3{
     font-family: var(--ff-title);
     font-weight: 700;
+}
+
+.icono{
+    color: burlywood;
 }
