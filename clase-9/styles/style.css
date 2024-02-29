@@ -28,6 +28,10 @@
 
 /* buttons */
 
+
+
+
+
 .btn-secondary{
     border: 2px solid var(--link-color);
     border-radius: 4px;
@@ -44,7 +48,7 @@
 
 /* Header section */
 
-nav{
+header nav{
     display: flex;
 }
 
@@ -52,6 +56,7 @@ nav a{
     text-decoration: none;
     color: var(--link-color);
     padding: 12px;
+    font-size: .8rem;
 }
 
 nav a:hover{
@@ -65,6 +70,7 @@ header{
     height: 88px;
     padding: 40px;
     align-items: center;
+
 
 }
 
@@ -121,4 +127,68 @@ header{
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
+}
+
+.btn-open-nav{
+    display: none;
+}
+
+/* REM 
+
+Es una medida relativa que depende del font size del html
+*/
+
+/* 
+EM
+
+Es una medida relativa que depende del font size del padre mas cercano
+*/
+html{
+    font-size: 20px;/* lo que valga esto, es lo que va a valer una unidad rem */
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+/* 
+20  1
+16 0.8 
+*/
+/* 
+*/
+
+
+/* Condicion 
+
+Si el ancho es de tanto (1024px) para abajo va a ejecutarse estas lineas de css
+*/
+html{
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    header nav{
+        display: none;
+    }
+
+    .btn-open-nav{
+        display: flex;
+        border: none;
+        background-color: transparent;
+        font-size: 24px;
+    }
+
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 524px){
+    html{
+        font-size: 12px;
+    }
 }
