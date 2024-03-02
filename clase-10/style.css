@@ -1,0 +1,161 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root{
+    --color-principal: #FFE600;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(75, 163, 31/* , 0.458 */); 
+    gap: 20px;
+    height: 100vh;
+    padding: 20px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.padre .hijo{
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.padre .hijo-2{
+
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    background-color: blueviolet; 
+    /* z-index: -1;*/
+}
+/* .padre .hijo-3{
+    position: relative;
+    top: -100px;
+    left: 100px;
+    bottom: 100px;
+    right: 100px;
+    background-color: blueviolet;
+    z-index: 1;
+ 
+} */
+/* 
+Cuando flex-direction es ROW
+
+justify-content: x
+aling-items: y
+
+Cuando flex-direction es COLUMN
+
+justify-content: y
+aling-items: X
+*/
+header{
+    display: flex;
+    background-color: var(--color-principal);
+    justify-content: space-between;
+    padding: 2vh 20%;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+/* 
+2vh
+vw = viewport width
+vh = viewport height
+*/
+
+
+.input-container{
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    max-width: 580px;
+}
+
+.input-container input{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.213);
+    border: none;
+    padding: 10px 40px 10px 16px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.input-container input::placeholder{
+    font-weight: 400;
+    /* color: red; */
+}
+
+
+.input-container input:focus{
+    outline: 0;
+    border: 1px solid rgb(107, 107, 255);
+}
+
+.input-container button{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right:  16px;
+    border-left: 1px solid rgb(178, 178, 178);
+    padding-left: 10px;
+    height: 70%;
+
+}
+
+
+header .logo-container{
+    display: flex;
+    align-items: center;
+}
+
+header .disney-logo-container{
+    display: flex;
+    align-items: center;
+    width: 340px;
+}
+header .disney-logo-container img{
+    width: 100%;
+}
+
+.biografia{
+    width: 100%;
+    padding: 2vh 20%;
+    margin-top: 100px;
+    display: flex;
+    gap: 10px;
+}
+
+/* .biografia p{
+
+} */
+
+.biografia img{
+    width: 25%;
+    height: 200px;
+    margin-top: 200px;
+    position: sticky;
+    top: 100px;
+
+}
